@@ -1,0 +1,2 @@
+class FmsController < ApplicationController
+end

@@ -1,0 +1,44 @@
+<% provide(:title, 'Signup') %>
+<h1>Just Sign up To the Page and be the part of the Yuclo family</h1>
+<style>
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+</style>
+<div class="uneditable-input">
+<div class="input">
+<div class="textarea">
+<div class="select">
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for @user, url:{action:"Post"} do |f| %>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+      <%= f.label :last_name %>
+      <%= f.text_field :last_name %>
+      <%=f.label :user_name %>
+      <%= f.text_field :user_name %>
+      <%= f.label :country %>
+      <%= f.text_field :country %>
+      <%= f.label :mobile_no %>
+      <%= f.text_field :mobile_no %>
+      <%= f.label :Email_id %>
+      <%= f.email_field :Email_id %>
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+      <%= f.submit "Signup", class: "btn btn-primary" %><%= link_to "Signup", users_Post_path %></p>
+    <% end %>
+    </div>
+    </div>
+    </div>
+      
+    </div>
+  </div>
+</div>
