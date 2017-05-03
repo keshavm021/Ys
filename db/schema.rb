@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170426195434) do
+ActiveRecord::Schema.define(version: 20170502182436) do
+
+  create_table "clashes", force: :cascade do |t|
+    t.integer  "room_no"
+    t.integer  "skill_id"
+    t.string   "mode"
+    t.string   "type_name"
+    t.integer  "Duration"
+    t.date     "Date"
+    t.integer  "ins_id"
+    t.string   "status"
+    t.integer  "class_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "country"

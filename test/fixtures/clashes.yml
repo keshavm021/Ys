@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  room_no: 1
+  skill_id: 1
+  mode: MyString
+  type_name: MyString
+  Duration: 1
+  Date: 2017-05-02
+  ins_id: 1
+  status: MyString
+  class_id: 1
+
+two:
+  room_no: 1
+  skill_id: 1
+  mode: MyString
+  type_name: MyString
+  Duration: 1
+  Date: 2017-05-02
+  ins_id: 1
+  status: MyString
+  class_id: 1

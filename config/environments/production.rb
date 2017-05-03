@@ -1,4 +1,4 @@
-Rails.application.configure do
+Rails.application.routes.default_url_options[:host] = 'Ys.herokuapp.com'
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -13,6 +13,8 @@ Rails.application.configure do
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
+  config.action_mailer.default_url_options = { :host => 'Ys.herokuapp.com' }
+
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
